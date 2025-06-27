@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Maken Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🍕 Maak jouw Pizza! 🍕</h1>
+    <p>Sleur ingrediënten op de pizzabodem en klik op "Klaar!"</p>
+    
+    <div id="pizza"
+    ondrop="drop(event)"
+    ondragover="allowDrop(event)">
+</div>
+
+<div id="keuze">
+    <h3>Toppings:</h3>
+    <img src="images/kaas.png" class="ingredient" draggable="true" data-naam="kaas" alt="kaas">
+    <img src="images/mozarella.png" class="ingredient" draggable="true" data-naam="mozzarella" alt="mozzarella">
+    <img src="images/tonijn.png" class="ingredient" draggable="true" data-naam="tonijn" alt="tonijn">
+    <img src="images/salami.png" class="ingredient" draggable="true" data-naam="salami" alt="salami">
+    <img src="images/kipfilet.png" class="ingredient" draggable="true" data-naam="kipfilet" alt="kipfilet">
+    <img src="images/proscuiotto.png" class="ingredient" draggable="true" data-naam="prosciutto" alt="prosciutto">
+    <img src="images/champignon.png" class="ingredient" draggable="true" data-naam="champignons" alt="champignons">
+    <img src="images/tomaat.png" class="ingredient" draggable="true" data-naam="tomaat" alt="tomaat">
+    <img src="images/courgette.png" class="ingredient" draggable="true" data-naam="courgette" alt="courgette">
+    <img src="images/spinazie.png" class="ingredient" draggable="true" data-naam="spinazie" alt="spinazie">
+  </div>
+  
+
+    <div id="knoppen">
+    <button onclick="toonResultaat()">Klaar!</button>
+    <button onclick="resetPizza()">Reset</button>
+  </div>
+
+    <p id="resultaat"></p>
+
+    <audio id="plop" src="audio/411642__inspectorj__pop-high-a-h1.wav" preload="auto"></audio>
+    <audio id="mammaMia" src="audio/8d82b5_Mario_Golf_Mario_Mamma_Mia_Sound_Effect.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
